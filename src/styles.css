@@ -1,0 +1,70 @@
+* {
+  font-family: "Calibri";
+}
+
+.content {
+  border: 1px solid lightgray;
+  width: 300px;
+}
+.title {
+  background-color: lightgray;
+  color: black;
+  height: 35px;
+  padding: 8px;
+}
+
+.add-section {
+  margin-left: 6px;
+  height: 35px;
+}
+.add-section:focus {
+  outline: none;
+}
+input {
+  border-style: hidden;
+  width: 233px;
+}
+::placeholder {
+  font-size: 14px;
+}
+.icon-style {
+  font-size: 23px;
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.search-items-div {
+  border-top: 1px solid lightgray;
+}
+.search-items {
+  padding-top: 10px;
+  text-align: center;
+}
+.icon {
+  margin-left: 20px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+.pagination-div a {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  color: blue;
+  border: 1px solid lightgrey;
+}
+
+.paginationActive {
+  background-color: lightgrey;
+}
+.prev-style a {
+  background-color: green;
+  color: white;
+}
+.next-style a {
+  background-color: green;
+  color: white;
+}
