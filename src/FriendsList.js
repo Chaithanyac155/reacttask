@@ -36,8 +36,12 @@ class FriendsList extends React.Component {
     }
   }
 
-  searchItem() {
-    const shitem = this.state.items.filter((val) =>
+   searchItem() {
+    const usersPerPage = 4;
+    const lastUser = this.state.activePage * usersPerPage;
+    const firstUser = lastUser - usersPerPage;
+    let arr = this.state.items.slice(firstUser, lastUser);
+    const shitem = arr.filter((val) =>
       val["text"]
         .toLowerCase()
         .includes(this.state.currentItem.text.toLowerCase())
